@@ -503,6 +503,9 @@ body {
   .sort_svg {
     display: block;
   }
+  .active-dropdown {
+    display: block !important;
+  }
   .article-holder {
     flex-direction: column;
     width: 100%;

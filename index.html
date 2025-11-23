@@ -11,7 +11,8 @@
   <body>
     <div class="w-screen --secondary-background">
       <!-- Digital Agency Navbar start -->
-      <nav class="w-screen fixed --backdrop top-0 left-0 right-0 z-50">
+      <nav class="w-screen absolute --backdrop top-0 left-0 right-0 z-50">
+        <!-- Removed the fixed position and added absolute from the navbar class for now-->
         <div
           class="__container-navbar-for-padding --main-padding flex justify-between"
           style="align-items: center"
@@ -30,7 +31,7 @@
             /></a>
 
             <div class="sort_svg hidden">
-              <button>
+              <button id="dropdown-btn">
                 <svg
                   width="24"
                   height="24"
@@ -64,6 +65,7 @@
           <div
             class="article-holder flex justify-between"
             style="align-items: center"
+            id="drop-down"
           >
             <!-- Articles -->
             <article class="p-0 h-fit">

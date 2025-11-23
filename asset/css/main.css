@@ -64,6 +64,12 @@ body {
   word-spacing: 0;
 }
 
+/* Navbar */
+/* .__container-navbar-for-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+} */
+
 /* home section */
 .__home-section {
   padding-top: 170px;
@@ -77,6 +83,10 @@ body {
   /* Navbar */
   .sort_svg {
     display: block;
+  }
+
+  .active-dropdown {
+    display: block !important;
   }
 
   .article-holder {
