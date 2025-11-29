@@ -197,6 +197,9 @@
   .z-50 {
     z-index: 50;
   }
+  .mt-14 {
+    margin-top: calc(var(--spacing) * 14);
+  }
   .mt-\[24px\] {
     margin-top: 24px;
   }
@@ -265,6 +268,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
   }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
@@ -422,6 +428,11 @@
       }
     }
   }
+  .md\:my-6 {
+    @media (width >= 48rem) {
+      margin-block: calc(var(--spacing) * 6);
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -435,6 +446,11 @@
   .lg\:mt-\[116px\] {
     @media (width >= 64rem) {
       margin-top: 116px;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:grid-cols-3 {
@@ -498,6 +514,23 @@ body {
 }
 .__home-section {
   padding-top: 170px;
+}
+@media (max-width: 1024px) {
+  #carousel-buttons {
+    display: flex;
+  }
+}
+@media (min-width: 1025px) {
+  #carousel-buttons {
+    display: none;
+  }
+}
+.arrow-btn {
+  background: rgb(73, 73, 250);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 999px;
 }
 @media only screen and (max-width: 1143px) {
   .sort_svg {

@@ -79,6 +79,29 @@ body {
 /* .services-grid-item {
 } */
 
+/* portfolio */
+/* Show custom arrows on mobile + tablet */
+@media (max-width: 1024px) {
+  #carousel-buttons {
+    display: flex;
+  }
+}
+
+/* Hide arrows on desktop */
+@media (min-width: 1025px) {
+  #carousel-buttons {
+    display: none;
+  }
+}
+
+.arrow-btn {
+  background: rgb(73, 73, 250);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 999px;
+}
+
 @media only screen and (max-width: 1143px) {
   /* Navbar */
   .sort_svg {

@@ -7,6 +7,10 @@
 
     <!-- Tailwindcss output linking -->
     <link rel="stylesheet" href="./asset/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <div class="w-screen --secondary-background">
@@ -604,46 +608,59 @@
             </h1>
           </div>
 
+          <!-- SPLIDE -->
+          <div id="my-slider" class="splide mt-[70px]">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- FIRST PROJECT -->
+                <li class="splide__slide">
+                  <div
+                    class="--secondary-background-transparent-2 p-[24px] rounded-[14px] h-fit"
+                  >
+                    <img
+                      src="./asset/images/project/project-1.png"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </li>
+
+                <!-- SECOND PROJECT -->
+                <li class="splide__slide">
+                  <div
+                    class="--secondary-background-transparent-2 p-[24px] rounded-[14px] lg:mt-[58px] h-fit"
+                  >
+                    <img
+                      src="./asset/images/project/project-2.png"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </li>
+
+                <!-- THIRD PROJECT -->
+                <li class="splide__slide">
+                  <div
+                    class="--secondary-background-transparent-2 p-[24px] rounded-[14px] lg:mt-[116px]"
+                  >
+                    <img
+                      src="./asset/images/project/project-3.png"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MOBILE/TABLET CUSTOM BUTTONS -->
           <div
-            class="__container-project-items mt-[70px] lg:gap-[24px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[10px]"
+            id="carousel-buttons"
+            class="flex justify-center gap-12 mt-14 md:my-6 lg:hidden"
           >
-            <div
-              class="--secondary-background-transparent-2 p-[24px] rounded-[14px] h-fit"
-            >
-              <!-- h-[301px] w-[384px] -->
-              <img
-                src="./asset/images/project/project-1.png"
-                alt="project-1"
-                width="100%"
-                height="100%"
-              />
-            </div>
-
-            <!-- second grid item -->
-            <div
-              class="--secondary-background-transparent-2 p-[24px] rounded-[14px] lg:mt-[58px] h-fit"
-            >
-              <!-- h-[301px] w-[384px] -->
-              <img
-                src="./asset/images/project/project-2.png"
-                alt="project-2"
-                width="100%"
-                height="100%"
-              />
-            </div>
-
-            <!-- third grid item -->
-            <div
-              class="--secondary-background-transparent-2 p-[24px] rounded-[14px] lg:mt-[116px]"
-            >
-              <!-- h-[301px] w-[384px] -->
-              <img
-                src="./asset/images/project/project-3.png"
-                alt="project-3"
-                width="100%"
-                height="100%"
-              />
-            </div>
+            <button id="prevBtn" class="arrow-btn">←</button>
+            <button id="nextBtn" class="arrow-btn">→</button>
           </div>
         </div>
       </section>
@@ -714,5 +731,6 @@
     </div>
     <!-- Javascript linking -->
     <script src="./asset/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
   </body>
 </html>
