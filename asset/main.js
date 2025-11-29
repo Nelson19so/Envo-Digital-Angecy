@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Navbar dropdown
   document.getElementById("dropdown-btn").addEventListener("click", () => {
     document.getElementById("drop-down").classList.toggle("active-dropdown");
+  });
+
+  window.addEventListener("scroll", function () {
+    if (
+      document.getElementById("drop-down").classList.contains("active-dropdown")
+    )
+      document.getElementById("drop-down").classList.remove("active-dropdown");
   });
 
   // Carousel
