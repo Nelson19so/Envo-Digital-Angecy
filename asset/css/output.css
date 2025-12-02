@@ -515,6 +515,13 @@ body {
 .__home-section {
   padding-top: 170px;
 }
+.arrow-btn {
+  background: #5454d4;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 16px;
+  border-radius: 999px;
+}
 @media (max-width: 1024px) {
   #carousel-buttons {
     display: flex;
@@ -524,13 +531,6 @@ body {
   #carousel-buttons {
     display: none;
   }
-}
-.arrow-btn {
-  background: rgb(73, 73, 250);
-  color: #ffffff;
-  font-weight: 600;
-  padding: 10px 16px;
-  border-radius: 999px;
 }
 @media only screen and (max-width: 1143px) {
   .sort_svg {

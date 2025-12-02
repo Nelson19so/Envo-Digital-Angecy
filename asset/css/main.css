@@ -75,6 +75,15 @@ body {
   padding-top: 170px;
 }
 
+/* Caret right - left */
+.arrow-btn {
+  background: #5454d4;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 16px;
+  border-radius: 999px;
+}
+
 /* services page grid screen */
 /* .services-grid-item {
 } */
@@ -92,14 +101,6 @@ body {
   #carousel-buttons {
     display: none;
   }
-}
-
-.arrow-btn {
-  background: rgb(73, 73, 250);
-  color: #ffffff;
-  font-weight: 600;
-  padding: 10px 16px;
-  border-radius: 999px;
 }
 
 @media only screen and (max-width: 1143px) {
